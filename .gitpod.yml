@@ -1,0 +1,3 @@
+tasks:
+  - init: sudo service docker start
+    command: docker --version
