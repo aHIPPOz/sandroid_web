@@ -4,7 +4,12 @@ FROM blissos-dev/docker
 RUN apt-get update && apt-get install -y \
     git \
     build-essential \
-    kmod
+    kmod \
+    qemu-system-x86 \
+    build-base \
+    wget \
+    curl \
+    squashfs-tools
 
 # Cloner et installer les modules Anbox
 RUN git clone https://github.com/anbox/anbox-modules.git /anbox-modules
