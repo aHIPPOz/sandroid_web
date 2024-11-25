@@ -66,13 +66,13 @@ Bienvenue dans **Wasmux Prototype**, un projet visant à explorer la création d
 Voici un exemple d’application nodeJS pouvant être compilée en Wasm :
 
 ```javascript
-use std::io::{self, Write};
-
-fn main() {
-    let stdout = io::stdout();
-    let mut handle = stdout.lock();
-    writeln!(handle, "Hello from WASM OS!").unwrap();
+// hello.js
+function main() {
+    console.log("Hello from WASM OS using WasmEdge!");
 }
+
+main();
+
 ```
 
 ### Compilation
